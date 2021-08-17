@@ -1,0 +1,9 @@
+{
+    "name": "trinhthinh/mvc",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "src/"
+        }
+    },
+    "require": {}
+}
