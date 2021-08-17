@@ -21,7 +21,7 @@ class Controller
         $class_name = str_replace('MVC\Controllers', '', get_class($this));
         $view_folder = str_replace('Controller', '', $class_name);
         $view_folder =  str_replace("\\","",$view_folder);
-        require(BASE_PATH . "/src/Views/" . $view_folder . '/' . $filename . '.php');
+        require(BASE_PATH . "src/Views/" . $view_folder . '/' . $filename . '.php');
         $content_for_layout = ob_get_clean();
 
         if ($this->layout == false) {
